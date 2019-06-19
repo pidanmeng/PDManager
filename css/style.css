@@ -1,0 +1,138 @@
+﻿*{
+   transition-duration: .3s;
+}
+body{
+       -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+	cursor:default;
+	color: #C4C4C4;
+   text-align: center;
+   font-family: Tahoma, Trebuchet MS, sans-serif;
+
+	font-size: 0.6875rem;
+	background-color: #262626;
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   padding: 0.0rem;
+   margin: 0.0rem;
+   overflow: hidden;
+}
+.header{
+   line-height: 2.1875rem;
+   font-size: 0.9375rem;
+   color: #C4C4C4;
+   background-color: #212121;
+   text-align: center;
+   box-shadow: 0.0rem 0.0rem 0.3125rem 0.0rem #000;
+}
+.footer{
+   line-height: 1.25rem;
+   font-size: 0.1875rem;
+   border-top: 0.0625rem;
+   border-color: #000;
+   text-align: center;
+   background-color: #212121;
+   box-shadow: 0.0rem 0.0rem 0.3125rem 0.0rem #000;
+}
+.content{
+   margin: 0.3125rem;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   position: relative;
+   height: 100%;
+}
+.panel{
+   border: 0.0625rem solid #171717;
+   border-radius: 0.3125rem; 
+}
+.panel:hover{
+   border: 0.0625rem solid #7799af;
+}
+.iconContent{
+   height: 2.1875rem;
+   width: 2.1875rem;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+   align-items: center;
+   right: 0.0rem;
+}
+.config,.scripts,.gradient,.projects{
+   height: 2.1875rem;
+   width: 6.25rem;
+   z-index: 2;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   left: 0.0rem;
+   background-color: #171717;
+   border-radius: 0.0rem 0.4375rem 0.4375rem 0.0rem;
+   transform: translateX(-4.0625rem);
+   opacity: .5;
+   margin-top: 0.3125rem;
+}
+.counter{
+   height: 0.9375rem;
+   width: 2.1875rem;
+   z-index: 2;
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+   left: 0.0rem;
+   margin-top: 0.3125rem;
+}
+.pls,.mns{
+   height: 0.9375rem;
+   width: 0.9375rem;
+   background-color: #171717;
+   padding: 0.0rem;
+   border: 0.0rem;
+   cursor: pointer;
+   line-height: 0.9375rem;
+   color: #c4c4c4;
+}
+.pls:focus,.mns:focus{
+   outline: 0.0rem;
+}
+.pls:hover,.mns:hover{
+   outline: -webkit-focus-ring-color auto 0.03125rem;
+}
+._title{
+   padding: 0.0rem 0.75rem;
+   display: block;
+   width: 2.5625rem;
+}
+.projects{
+   transform: translateX(-6.25rem); 
+}
+.gradient ._title{
+   padding: 0.0rem 0.40625rem;
+}
+.config:hover,.scripts:hover,.gradient:hover,.projects:hover{
+   transform: translateX(0.0rem);
+   cursor: pointer;
+   opacity: 1;
+}
+.icon{
+   height: 1.25rem;
+   width: 1.25rem;
+}
+.mainPanel{
+   height: 100%;
+   width: 100%;
+   border-width: 0.0rem;
+   z-index: 1;
+}
+nav{
+   position: absolute;
+   left: 0.0rem;
+   bottom: 0.3125rem;
+}

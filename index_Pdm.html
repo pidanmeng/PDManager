@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link id="ppstyle" rel="stylesheet" href="css/style.css">
+      <script src="./lib/CSInterface-7.js"></script>
+      <script src="./lib/Vulcan-07.js"></script>
+      <script src="./lib/jquery-1.9.1.js"></script>
+      
+      <script type="text/javascript">
+         var loadIframe = function(){
+            if($("iframe").attr("src")==="https://uigradients.com"){
+               $("iframe").contents().find("html").append("<style>::-webkit-scrollbar {width: 5px;background-color: #232323;}::-webkit-scrollbar-thumb {background-color: #b4b4b4; border-radius: 10px;}::-webkit-scrollbar-track {    box-shadow: inset 0 0px 2px #000;    border-radius: 10px;}body{overflow-X:hidden;}</style>");
+               var a = $("iframe").contents().find(".display").attr("style").split("right");
+               $("iframe").contents().find(".display").attr("style",a[0]+"bottom"+a[1]);
+               $("iframe").contents().find("#nav").hide();
+               window.frames['mainPanel'].document.documentElement.scrollTop=150;
+               console.log(window.frames['mainPanel'].document.documentElement.scrollTop);
+            }
+         }
+      </script>
+
+      <title>PdmProject</title>
+   </head>
+   <body>
+      <header class="header">Pdm Project Manager</header>
+      
+      <content class="content panel">
+         <nav id="iconList">
+            <div class="projects" id="projects"><strong class="_title"></strong><div class="iconContent" ><img class="icon" id="iconProjects" src="res/project.png"></div></div>
+            <div class="gradient" id="gradient"><strong class="_title">gradient</strong><div class="iconContent" ><img class="icon" id="iconGradient" src="res/gradient.png"></div></div>
+            <div class="scripts" id="scripts"><strong class="_title">scripts</strong><div class="iconContent"><img class="icon"id="iconScripts" src="res/scripts.png"></div></div>
+            <div class="config" id="config"><strong class="_title">config</strong><div class="iconContent"><img class="icon" id="iconConfig" src="res/config.png"></div></div>
+            <div class="counter">
+               <button class="mns scl" id="mns">-</button>
+               <button class="pls scl" id="pls">+</button>
+            </div>
+         </nav>
+         
+         <iframe class="mainPanel" id="mainPanel" name="mainPanel" src="html/projects.html" onload="loadIframe()" onloadstart="alert(123)"></iframe>
+      </content>
+      <footer class="footer">
+         Copyright © 2018-2020 @皮蛋萌
+      </footer>
+
+      <script src="./js/PdmProject.js"></script>
+     <!--  <script type="text/javascript">
+         window.frames['mainPanel'].document.documentElement.scrollTop=150;
+         console.log(window.frames['mainPanel'].document.documentElement.scrollTop);
+      </script> -->
+   </body>
+</html>

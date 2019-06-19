@@ -1,0 +1,82 @@
+*{
+   transition-duration: .3s;
+}
+body{
+   cursor:default;
+   color: #C4C4C4;
+   font-family: Tahoma, Trebuchet MS, sans-serif;
+
+   font-size: 0.6875rem;
+   background-color: #262626;
+   
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   padding: 0.0rem;
+   margin: 0.0rem;
+   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0.3125rem;
+    background-color: #232323;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b4b4b4;
+    border-radius: 0.625rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0.0rem 0.125rem #000;
+    border-radius: 0.625rem;
+}
+.config{
+   height: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: stretch;
+   flex-direction: column;
+   margin-top: 0.625rem;
+   display: flex;
+   align-items: stretch;
+   flex-direction: column;
+   justify-content: flex-start;
+   text-align: center;
+}
+.btn{
+   background-color: #212121;
+   height: 1.875rem;
+   margin: 0.0rem 0.625rem;
+   padding: 0.0rem;
+   border: 0.0rem;
+   cursor: pointer;
+   color: #c4c4c4;
+   outline: #171717 auto 0.03125rem;
+   -webkit-user-select:none;
+   -moz-user-select:none;
+   -ms-user-select:none;
+   user-select:none;
+}
+.btn:focus{
+   outline: 0.0rem;
+}
+.btn:hover{
+   outline: -webkit-focus-ring-color auto 0.03125rem;
+}
+.config p{
+   line-height: 1.25rem;
+   margin: 0.625rem;
+   display: block;
+   word-wrap:break-word;
+   word-break:break-all;
+}
+.seccess{
+   width: 3.75rem;
+   margin: 0.0rem;
+   opacity: 1;
+   color: #77af77;
+}
+.common{
+   opacity: 0;
+}
+#description{
+  padding: 0.0rem 2.1875rem;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest ExtensionBundleId="PdmProject" ExtensionBundleName="PdmProject" ExtensionBundleVersion="1.0" Version="4.0">
+  <ExtensionList>
+    <Extension Id="PdmProject" Version="1.0"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+	  <Host Name="AEFT" Version="13.0" />
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="5.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="PdmProject">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./index_Pdm.html</MainPath>
+	  <CEFCommandLine>
+
+		<Parameter>--enable-nodejs</Parameter>
+
+		<Parameter>--allow-file-access</Parameter>
+
+		<Parameter>--allow-file-access-from-files</Parameter>
+
+	  </CEFCommandLine>
+
+
+        </Resources>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>Pdm Project Manager</Menu>
+          <Geometry>
+            <Size>
+              <Height>400</Height>
+              <Width>400</Width>
+            </Size>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors pidanmeng (1092333914@qq.com)
+ * @date    2018-09-07 08:55:32
+ * @version $Id$
+ */
+*{
+   transition-duration: .3s;
+}
+body{
+      -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+   cursor:default;
+   color: #C4C4C4;
+   text-align: center;
+   font-family: Tahoma, Trebuchet MS, sans-serif;
+
+   font-size: 0.6875rem;
+   background-color: #262626;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: stretch;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   padding: 0.0rem;
+   margin: 0.0rem;
+}
+::-webkit-scrollbar {
+    width: 0.3125rem;
+    background-color: #232323;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b4b4b4;
+    border-radius: 0.625rem;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0.0rem 0.125rem #000;
+    border-radius: 0.625rem;
+}
+.panel{
+   border: 0.0625rem solid #232323;
+   border-radius: 0.3125rem; 
+}
+.panel:hover{
+   border: 0.03125rem solid #7799af;
+}
+label{
+  border-color: #232323;
+  border-width: 0.03125rem 0.0rem 0.03125rem 0.0rem ;
+  border-style: solid;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: left;
+  padding-left: 2.4rem;
+  overflow: hidden;
+}
+label:hover{
+  border-color: #7799af;
+}
