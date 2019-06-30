@@ -1,4 +1,13 @@
 ﻿//渲染gif预览图
+try {
+    var loadSuccess = new ExternalObject("lib:\PlugPlugExternalObject"); //载入所需对象，loadSuccess 记录是否成功载入
+} catch (e) {
+    alert(e);// 如果载入失败，输出错误信息
+}
+
+var thisObj = new CSXSEvent();
+thisObj.type="toGif"; 
+
 var renderProjectPreview = function(path, comp){
    try{
       if(!comp){
@@ -8,12 +17,11 @@ var renderProjectPreview = function(path, comp){
       thisRender.outputModule(1).file = File(path);
       thisRender.outputModule(1).applyTemplate("renderPreview");
       var flag = 0;
-      var myObject = new CSXSEvent();
-      myObject.type="toGif"; 
+      
       thisRender.onStatusChanged = function(){
-         myObject.data = path;
+         thisObj.data = path;
          if (flag)
-            myObject.dispatch();
+            thisObj.dispatch();
          flag++;
       }
       app.project.renderQueue.render();
